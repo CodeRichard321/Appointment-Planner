@@ -16,7 +16,7 @@ export const ContactForm = ({
   const handleEmailChange = e => setEmail(e.target.value);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} role='form'>
       <label>Name</label>
       <input type="text" name="name" value={name} onChange={handleNameChange} />
       <label>Phone Number</label>
