@@ -18,11 +18,11 @@ export const ContactForm = ({
   return (
     <form onSubmit={handleSubmit} role='form'>
       <label>Name</label>
-      <input type="text" name="name" value={name} onChange={handleNameChange} />
+      <input type="text" name="name" value={name} onChange={handleNameChange} data-testid='name-input' />
       <label>Phone Number</label>
-      <input type="tel" name="phone" value={phone} onChange={handlePhoneChange} pattern={"[1-9][0-9]{2}-[1-9][0-9]{2}-[0-9]{4}"} />
+      <input type="tel" name="phone" value={phone} onChange={handlePhoneChange} pattern={"[1-9][0-9]{2}-[1-9][0-9]{2}-[0-9]{4}"} data-testid='phone-input' />
       <label>Email</label>
-      <input type="email" name="email" value={email} onChange={handleEmailChange} />
+      <input type="email" name="email" value={email} onChange={handleEmailChange} data-testid='email-input' />
       <input type="submit" value="Submit" />
     </form>
   );
