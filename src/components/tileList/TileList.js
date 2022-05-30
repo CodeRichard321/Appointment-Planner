@@ -1,9 +1,10 @@
+import { Tile } from '../tile/Tile';
 import React from "react";
 
-export const TileList = () => {
+export const TileList = ({ list }) => {
   return (
-    <div>
-      
+    <div data-testid="tile-list">
+      {list.forEach(item => <Tile />)}
     </div>
   );
 };
