@@ -45,7 +45,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
   }, [name])
 
   return (
-    <div>
+    <div data-testid='contact-page'>
       <section>
         <h2>Add Contact</h2>
         <ContactForm handleSubmit={handleSubmit} name={name} setName={setName} phone={phone} setPhone={setPhone} email={email} setEmail={setEmail} />
