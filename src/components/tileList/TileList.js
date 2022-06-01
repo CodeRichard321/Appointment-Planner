@@ -4,7 +4,7 @@ import React from "react";
 export const TileList = ({ list }) => {
   return (
     <div data-testid="tile-list">
-      {list.map(item => <Tile obj={item} />)}
+      {list.map((item, index) => <Tile obj={item} key={index}/>)}
     </div>
   );
 };
