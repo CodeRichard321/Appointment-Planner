@@ -1,0 +1,1 @@
+This project is from Codecademy's React lessons. Feel free to compare my solution with yours.
