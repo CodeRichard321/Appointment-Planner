@@ -2,7 +2,7 @@ import { AppointmentForm } from '../../components/appointmentForm/AppointmentFor
 import { TileList } from '../../components/tileList/TileList';
 import React, { useState, useEffect } from "react";
 
-export const AppointmentsPage = ({ appointments, contacts, addAppointment }) => {
+export const AppointmentsPage = ({ appointments, addAppointment, contacts }) => {
   /*
   Define state variables for 
   appointment info
@@ -21,7 +21,7 @@ export const AppointmentsPage = ({ appointments, contacts, addAppointment }) => 
 
     // Clear form
     setTitle('');
-    setContact({});
+    setContact('');
     setDate('');
     setTime('');
   };
